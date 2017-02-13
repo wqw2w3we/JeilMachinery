@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="product">
+
+   <!--  BNO,TITLE,CONTENT,WRITER,REGDATE,VIEWCNT -->
+   <insert id="create">
+      insert into jeil_product (product_category, product_title, product_writer, product_content, product_picture)
+      values (#{product_category}, #{product_title}, #{product_writer}, #{product_content}, #{product_picture})
+   </insert>
+   
+   <select id="listAll">
+   	select
+   		product_no, product_category, product_title, product_writer, product_content,
+  	 	product_picture, product_dt
+  	from
+  	jeil_product
+   </select>
+   
+   
+   
+   
+</mapper>
