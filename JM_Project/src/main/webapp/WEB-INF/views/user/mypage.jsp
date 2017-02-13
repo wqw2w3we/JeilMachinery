@@ -36,6 +36,7 @@ function goWrite(){
       <label for="inputdefault">이메일</label>
         <input class="form-control" id="user_email" type="text" name = 'user_email' value="${user.user_email}" readonly="readonly">
     </div>
+    <button>aaaaa</button>
 </div>
 </div>
 </body>
