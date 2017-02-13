@@ -37,8 +37,8 @@ public class EditorController {
             String rename = onlyFileName + "_" + getCurrentDayTime() + extension; // fileName_20150721-14-07-50.jpg
             
             byte[] bytes = upload.getBytes();
-            String uploadPath = "C:/WORKSPACE/JM_Project/src/main/webapp/resources/upload/" + rename;//占쏙옙占쏙옙占쏙옙
-            
+           /* String uploadPath = "C:/WORKSPACE/JM_Project/src/main/webapp/resources/upload/" + rename;*/
+            String uploadPath =  "C:/Users/KYJ/git/JeilMachinery/JM_Project/src/main/webapp/resources/upload/" + rename;
             
             out = new FileOutputStream(new File(uploadPath));
             out.write(bytes);
